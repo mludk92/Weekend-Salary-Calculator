@@ -1,3 +1,28 @@
 body {
     background: lightblue;
+    margin: 0;
 }
+header{
+    background-color: gray;
+    font-size: 75px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+#entryform{
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
