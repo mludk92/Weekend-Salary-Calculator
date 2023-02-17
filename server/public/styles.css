@@ -3,11 +3,18 @@ body {
     margin: 0;
 }
 header{
-    background-color: gray;
+    background-color: rgb(80, 80, 169);
     font-size: 75px;
     color: white;
+    text-shadow: 0 0 10px #0e0a0a;
     justify-content: center;
     text-align: center;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(213, 213, 234);
+}
+h1{
+    color:white;
+    text-shadow: 0 0 10px #000;
 }
 #entryform{
     text-align: center;
