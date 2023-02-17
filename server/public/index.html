@@ -15,13 +15,35 @@
         <form class="employee-form" onSubmit="submitForm(event)"><br/>
             First<br/>Name: <input id="firstName" type="text" required/><br />
             Last<br/>Name: <input id="lastName" type="text" required/><br />
-            ID: <input id="id" type="text" required/><br />
+            ID: <input id="id" type="number" required/><br />
             Title: <input id="Title" type="text" required/><br />
             Annual <br/> Salary: <input id="annualSalary" type="number" required/><br />
             <input type="submit" value="Submit" /><br />
         </form>
     </div>
- 
+
+    <table id="employee" > <h2>Employee Data </h2>
+        <thead>
+            <tr>
+                <th>First<br/>Name</th>
+                <th>Last<br/>Name</th>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Annual<br/>Salary</th>
+                <th>       </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mitchell</td>
+                <td>Ludkey</td>
+                <td>769</td>
+                <td>BA / App Dev</td>
+                <td>70000</td>
+                <td><button onClick="deleteRow(event)">Delete Row</button></td>
+            </tr>
+        </tbody>
+        </table>
     <script src="client.js"> </script>
 </body>
 </html>
