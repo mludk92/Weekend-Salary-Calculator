@@ -23,13 +23,39 @@ function submitForm(event) {
     <td>${lastNameVal}</td>
     <td>${idVal}</td>
     <td>${titleVal}</td>
-    <td>$ ${salaryVal}</td>
+    <td id="salary">${salaryVal}</td>
     <td><button onClick="deleteRow(event)">Delete Row</button></td>
-</tr>` }
+</tr>` 
+//get the values of the annual salary column and add them together
+var table = document.getElementById("employee"), sumVal = 0;
+            
+    for(var i = 1; i < table.rows.length; i++)
+    {
+        sumVal = sumVal + parseInt(table.rows[i].cells[4].innerHTML);
+    }
+    
+    document.getElementById("totalMonth").innerHTML =  `Total Montly $${sumVal}`;
+    console.log(sumVal);
+
+}
 
 function deleteRow(event){
     console.log(this.event)
     //closest get closest element passed through
     //better than parentElement.parentElement.parentElement...
     event.target.closest('tr').remove() 
+//get the values of the annual salary column and subtract what is missing
+    var table = document.getElementById("employee"), sumVal = 0;
+            
+    for(var i = 1; i < table.rows.length; i++)
+    {
+        sumVal = sumVal + parseInt(table.rows[i].cells[4].innerHTML);
+    }
+    
+    document.getElementById("totalMonth").innerHTML =  `Total Montly $${sumVal}`;
+    console.log(sumVal);
 }
+
+
+
+
