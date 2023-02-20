@@ -56,7 +56,7 @@ function deleteRow(event){
     
     document.getElementById("totalMonth").innerHTML =  `Total Montly $${Number(sumVal)/12}`;
     console.log(sumVal);
-    document.getElementById("totalYear").innerHTML =  `Total Montly $${Number(sumVal)}`;
+    document.getElementById("totalYear").innerHTML =  `Total Yearly $${Number(sumVal)}`;
     console.log(sumVal);
 }
 
