@@ -34,9 +34,11 @@ var table = document.getElementById("employee"), sumVal = 0;
         sumVal = sumVal + parseInt(table.rows[i].cells[4].innerHTML);
     }
     
-    document.getElementById("totalMonth").innerHTML =  `Total Montly $${sumVal}`;
+    document.getElementById("totalMonth").innerHTML =  `Total Montly $${Number(sumVal)/12}`;
     console.log(sumVal);
-
+ 
+    document.getElementById("totalYear").innerHTML =  `Total Montly $${Number(sumVal)}`;
+    console.log(sumVal);
 }
 
 function deleteRow(event){
@@ -52,7 +54,9 @@ function deleteRow(event){
         sumVal = sumVal + parseInt(table.rows[i].cells[4].innerHTML);
     }
     
-    document.getElementById("totalMonth").innerHTML =  `Total Montly $${sumVal}`;
+    document.getElementById("totalMonth").innerHTML =  `Total Montly $${Number(sumVal)/12}`;
+    console.log(sumVal);
+    document.getElementById("totalYear").innerHTML =  `Total Montly $${Number(sumVal)}`;
     console.log(sumVal);
 }
 
